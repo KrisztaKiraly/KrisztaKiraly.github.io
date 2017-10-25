@@ -1,0 +1,20 @@
+<div class="book-details">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object" src="{{::vm.book.imageLinks.thumbnail}}"/>
+                </div>
+                <div class="media-body">
+                    <h2 class="media-heading book-title">{{::vm.book.title}}</h2>
+                    <h4 ng-show="vm.authors">By {{::vm.authors}}</h4>
+                    <div ng-bind-html="vm.book.description"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-block btn-success pull-right" ng-click="vm.addToCart()" ng-if="!vm.isInCart">Add to cart</button>
+            <button class="btn btn-block btn-success pull-right" ng-click="vm.removeFromCart()" ng-if="vm.isInCart">Remove from cart</button>
+        </div>
+    </div>
+</div>

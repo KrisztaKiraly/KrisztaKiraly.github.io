@@ -1,0 +1,32 @@
+.nav .active {
+    color: #313952;
+}
+
+.nav ul {
+    margin-left: 40px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #313952;
+    text-decoration: none;
+}
+
+.custom-navbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #2e97a7;
+}
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="bookshop" ng-strict-di>
+    <head>
+        <meta charset="utf-8" />
+        <title>BookShop</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="bookshop.css">
+        <link rel="stylesheet" type="text/css" href="menu/menu.css">
+        <link rel="stylesheet" type="text/css" href="details/book-details.css">
+        <link rel="stylesheet" type="text/css" href="search/book-search.css">
+    </head>
+    <body>
+        <div ng-controller="BookshopController">
+            <div ng-include="'menu/menu.tmpl.html'"></div>
+            <div class="container app-container" ng-view></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.6/angular-resource.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.min.js"></script>
+        <script src="bookshop.module.js"></script>
+        <script src="bookshop.controller.js"></script>
+        <script src="book-table/book-table.component.js"></script>
+        <script src="cart/cart.module.js"></script>
+        <script src="cart/cart.controller.js"></script>
+        <script src="cart/cart.service.js"></script>
+        <script src="details/book-details.module.js"></script>
+        <script src="details/book-details.controller.js"></script>
+        <script src="details/book-details.service.js"></script>
+        <script src="error/error.module.js"></script>
+        <script src="search/book-search.module.js"></script>
+        <script src="search/book-search.controller.js"></script>
+        <script src="search/book-search.service.js"></script>
+        <script src="storage/storage.module.js"></script>
+        <script src="storage/storage.service.js"></script>
+    </body>
+</html>
